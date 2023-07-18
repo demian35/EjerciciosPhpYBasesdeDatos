@@ -25,5 +25,5 @@ if($conexion->query($sentenciaSQL)==TRUE){//si se ejecuta la sentencia sentenica
 }else{
     die("Opps , ha ocurrido un error al insertar".$conexion->error); //si no , mandamos el error
 }
-
+$conexion->close();//cerramos la conexion
 ?>
