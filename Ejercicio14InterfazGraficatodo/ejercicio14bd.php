@@ -22,6 +22,16 @@ if($_POST){
 
 }
 
-$consulta="SELECT * FROM tareastodo;";
+if($_GET){
+    $deleteElem=$_GET['borrar'];//OBTENEMOS EL ID DEL DATO QUE QUEREMOS ELIMINAR
+    $sql=$conexion->prepare("DELETE FROM tareastodo WHERE idtarea=? ");//SENTENCIA
+    $sql->bind_param("s",$deleteElem);//le mandamos los datos a registrar por medio de bind_param le enviaremos dos cadenas "ss"
+    $sql->execute();//ejecutamos la sentencia
+    $mensaje = "Tarea eliminada con éxito";
+}
+
+
+
+$consulta="SELECT * FROM tareastodo;";//sentencia para consultar todos los registros de la bd
 $resultado=$conexion->query($consulta);//ejecutamos la consulta
 $datostarea=$resultado->fetch_all();//mostramos los registros

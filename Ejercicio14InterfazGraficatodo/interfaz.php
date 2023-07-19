@@ -27,6 +27,14 @@ include("ejercicio14bd.php")
                 </form>
             </div>
             <div class="card-footer text-muted">
+                <p class="mensaje-eliminacion">
+                    <script>
+                        var mensajeEliminacion = "<?php echo $mensaje; ?>";
+                        var elementoMensaje = document.querySelector('.mensaje-eliminacion');
+                        elementoMensaje.innerHTML = mensajeEliminacion;
+                    </script>
+
+                </p>
             </div>
         </div>
     </div>
@@ -48,7 +56,7 @@ include("ejercicio14bd.php")
                         <tr class="">
                             <td> <?php echo $datotarea[0]; ?> </td>
                             <td><?php echo $datotarea[1]; ?></td>
-                            <td><a name="" id="" class="btn btn-danger" href="<?php echo $datotarea[0]; ?>" role="button">Borrar</a></td>
+                            <td><a name="" id="" class="btn btn-danger" href="?borrar=<?php echo $datotarea[0]; ?>" role="button">Borrar</a></td>
                         </tr>
                         <?php } ?>
                     </tbody>
