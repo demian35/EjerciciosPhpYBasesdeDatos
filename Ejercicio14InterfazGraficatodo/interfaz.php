@@ -9,6 +9,13 @@ include("ejercicio14bd.php")
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administra tus tareas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <style> 
+        body{
+            background-color: yellow;
+        }
+    </style>
+
 </head>
 <body>
 <div class="container">
@@ -16,7 +23,13 @@ include("ejercicio14bd.php")
         <div class="col-md-6">
         <div class="card">
             <div class="card-header">
-            
+                <p class="mensaje-tarea-agregada">
+                    <script>
+                        var mensajeagregado = "<?php echo $success; ?>";
+                        var elementoMensaje2 = document.querySelector('.mensaje-tarea-agregada');
+                        elementoMensaje2.innerHTML = mensajeagregado;
+                    </script>
+                </p>
             </div>
             <div class="card-body">
                 <form action=""  method="post">
