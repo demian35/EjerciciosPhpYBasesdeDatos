@@ -18,5 +18,6 @@ if($_POST){
     $sql=$conexion->prepare("INSERT INTO tareastodo (idtarea, nombretarea) VALUES (null, ?)");
     $sql->bind_param("s",$tarea);//le mandamos los datos a registrar por medio de bind_param le enviaremos dos cadenas "ss"
     $sql->execute();//ejecutamos la sentencia
+    echo "Tarea registrada con exito"."<br>";
 
 }
