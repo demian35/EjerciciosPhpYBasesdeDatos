@@ -1,3 +1,7 @@
+<?php
+include("ejercicio14bd.php")
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +20,7 @@
             </div>
             <div class="card-body">
                 <form action=""  method="post">
-                    ingrese una tarea: <input required class="form-control" type="text" name="nombre" id="">
+                    ingrese una tarea: <input required class="form-control" type="text" name="tarea" id="">
                     <br>
                     <button class="btn btn-success" type="submit">Envia tarea</button>
                     <br>
