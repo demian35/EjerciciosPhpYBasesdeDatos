@@ -21,3 +21,7 @@ if($_POST){
     echo "Tarea registrada con exito"."<br>";
 
 }
+
+$consulta="SELECT * FROM tareastodo;";
+$resultado=$conexion->query($consulta);//ejecutamos la consulta
+$datostarea=$resultado->fetch_all();//mostramos los registros

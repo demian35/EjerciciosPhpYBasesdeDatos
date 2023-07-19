@@ -44,11 +44,13 @@ include("ejercicio14bd.php")
                         </tr>
                     </thead>
                     <tbody>
+                        <?php foreach($datostarea as $datotarea){ ?>
                         <tr class="">
-                            <td>1</td>
-                            <td>Una tarea</td>
-                            <td><a name="" id="" class="btn btn-danger" href="" role="button">Borrar</a></td>
+                            <td> <?php echo $datotarea[0]; ?> </td>
+                            <td><?php echo $datotarea[1]; ?></td>
+                            <td><a name="" id="" class="btn btn-danger" href="<?php echo $datotarea[0]; ?>" role="button">Borrar</a></td>
                         </tr>
+                        <?php } ?>
                     </tbody>
                 </table>
             </div>
