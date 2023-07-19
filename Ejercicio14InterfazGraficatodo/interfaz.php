@@ -30,30 +30,29 @@ include("ejercicio14bd.php")
             </div>
         </div>
     </div>
-</div>
 
-<div class="col-md-6">
-    <div class="table-responsive">
+
+    <div class="col-md-6 float-end">
         <div class="table-responsive">
-            <table class="table table-primary">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Tarea</th>
-                        <th>Accion</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="">
-                        <td>1</td>
-                        <td>Una tarea</td>
-                        <td><a name="" id="" class="btn btn-danger" href="" role="button">Borrar</a></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="table-responsive">
+                <table class="table table-primary">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Tarea</th>
+                            <th>Accion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="">
+                            <td>1</td>
+                            <td>Una tarea</td>
+                            <td><a name="" id="" class="btn btn-danger" href="" role="button">Borrar</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-        
-
     </div>
 </div>
 
